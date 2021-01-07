@@ -32,3 +32,15 @@ if __name__ == '__main__':
         hider = threading.Thread(target=Hider,args=(cond,'hider'))
         seeker.start()
         hider.start()
+#运行结果
+'''
+seeker : 我已经把眼睛蒙上了！
+hider is hiding
+hider is hiding
+hider : 我已经开始藏了！
+seeker is finding!!!
+seeker is finding!!!
+seeker is finding!!!
+seeker : 我赢了！！
+hider:被你找到了~
+'''
